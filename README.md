@@ -33,23 +33,16 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![image](https://github.com/fcordero729/Azure-SOC/assets/143331944/78888eee-17be-4eab-9f15-34efb533583d)
+![image](https://github.com/fcordero729/Azure-SOC/assets/143331944/8e56fe97-23a0-4552-b896-b36eed0a7c75)
+![image](https://github.com/fcordero729/Azure-SOC/assets/143331944/9bf8301d-e945-440c-b0e2-b22b88689fad)
+
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
 
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+![image](https://github.com/fcordero729/Azure-SOC/assets/143331944/ab7c28df-ee65-4a81-ad74-097bdba64286)
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -58,16 +51,14 @@ Stop Time 2023-03-16 17:04:29
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
 
-| Metric                   | Count
-| ------------------------ | -----
-| SecurityEvent            | 8778
-| Syslog                   | 25
-| SecurityAlert            | 0
-| SecurityIncident         | 0
-| AzureNetworkAnalytics_CL | 0
+![image](https://github.com/fcordero729/Azure-SOC/assets/143331944/2efa9e51-2831-4b1d-9d21-7168d18ea52f)
+
+## Results Between Before Hardening and After Hardening of Azure Security Controls
+The following table showws the percentage difference of events incurred before and after the security controls implemented.
+
+![image](https://github.com/fcordero729/Azure-SOC/assets/143331944/138b5cb9-cfb2-454d-a408-08f39b746007)
+
 
 ## Conclusion
 
